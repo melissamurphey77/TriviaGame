@@ -1,5 +1,38 @@
 $(document).ready(function() {
+  
+  var currentQuestion= 0;
 
+  function askQuestion () {
+  
+      $("#question").text(questions[currentQuestion].question);
+
+      $("#choice1").text(questions[currentQuestion].choices[0]);
+      $("#choice2").text(questions[currentQuestion].choices[1]);
+      $("#choice3").text(questions[currentQuestion].choices[2]);
+      $("#choice4").text(questions[currentQuestion].choices[3]);
+
+      setTimeout(function(){
+
+        console.log("check question");
+  
+        currentQuestion++;
+        
+
+        if (currentQuestion < 10){
+          askQuestion();
+        }
+        else {
+          console.log("display result");
+        }
+  
+  
+      },3000);
+
+
+
+
+  }
+  
 
 
 
@@ -67,13 +100,8 @@ $(document).ready(function() {
   },
 ]
   
-
-    $("#question").text(questions[0].question);
-
-    $("#choice1").text(questions[0].choices[0]);
-    $("#choice2").text(questions[0].choices[1]);
-    $("#choice3").text(questions[0].choices[2]);
-    $("#choice4").text(questions[0].choices[3]);
+    
+    askQuestion();
 
     
 
