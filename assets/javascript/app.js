@@ -1,5 +1,56 @@
 $(document).ready(function() {
   
+  //var correct= 0;
+
+  //var incorrect= 0;
+
+ // var unanswered= 0;
+
+   //$("#quizstart").hide
+ 
+
+ // $("#startbtn")on.click(function(){
+ // $("#quizstart").show();
+//});
+  
+  var game = {
+    questions: questions,
+    currentQuestion: 0,
+    counter: 30,
+    correct: 0,
+    incorrect: 0,
+    countdown: function(){
+
+    },
+    askQuestion: function(){
+
+    },
+    timesUp: function(){
+
+    },
+    results: function(){
+
+    },
+    clicked: function(){
+
+    },
+    answerCorrect: function(){
+
+    },
+    answerIncorrect: function(){
+
+    },
+    
+
+
+
+
+
+
+
+  }
+  
+  
   var currentQuestion= 0;
 
   function askQuestion () {
@@ -26,7 +77,7 @@ $(document).ready(function() {
         }
   
   
-      },3000);
+      },20000);
 
 
 
@@ -43,65 +94,77 @@ $(document).ready(function() {
     question: "What is the main character's name in Pretty Woman?",
     choices: ["Kit", "Roxanne", "Vivian", "Lexi"],
     answer: "Vivian",
+    //gif: https://giphy.com/gifs/zCrBibfCxTQOY/html5
   },
 
   {
     question: "Which movie is not a Tom Hanks/Meg Ryan movie?",
-    choices: ["Splash", "Joe VS the Volcano", "Sleepless in Seattle", "You've Got Mail"],
+    choices: ["Sleepless in Seattle", "Joe VS the Volcano", "Splash", "You've Got Mail"],
     answer: "Splash",
+    //gif: https://giphy.com/gifs/rJwQZMBv979Sg/html5
   },
 
   {
     question: "What is Cher's favorite phrase in Clueless?",
     choices: ["My bad", "Oops I did it again", "As if", "Totally"],
     answer: "As if",
+    //gif: https://giphy.com/gifs/3o7aTIGlhSo1bL8QUg/html5
   },
 
   {
     question: "'I'll have what she's having' is from which RomCom?",
-    choices: ["Pretty Woman", "Sleepless in Seattle", "French Kiss", "When Harry Met Sally"],
+    choices: ["Pretty Woman", "Sleepless in Seattle", "When Harry Met Sally", "French Kiss"],
     answer: "When Harry Met Sally",
+    //gif: https://giphy.com/gifs/l4HnWa5toF8gtBhLO/html5
   },
 
   {
     question: "Which of these is not a Jennifer Lopez RomCom?",
     choices: ["Monster-in-Law", "The Cell", "The Back-Up Plan", "The Wedding Planner"],
     answer: "The Cell",
+    //gif: https://giphy.com/gifs/dGTZhZakoYHWE/html5
   },
 
   {
     question: "In 'Never Been Kissed', what was Josie's nickname in High School?",
     choices: ["Pussycat", "Nosy Josie", "Josie Grossy", "Jumbo Josie"],
     answer: "Josie Grossy",
+    //gif: https://giphy.com/gifs/xsmUJLxjV7ww8/html5
   },
 
   {
     question: "Which RomCom featured the phrase 'As you wish'?",
-    choices: ["Ever After:A Cinderella Story", "Mirror Mirror", "The Princess Bride", "Robin Hood Men in Tights"],
+    choices: ["Ever After: A Cinderella Story", "Mirror Mirror", "The Princess Bride", "Robin Hood Men in Tights"],
     answer: "The Princess Bride",
+    //gif: https://giphy.com/gifs/zZGz30GiclDFu/html5
   },
 
   {
     question: "What song performed repeatedly in 'The Wedding Singer' isn't well recieved?",
     choices: ["Take on Me", "Pretty Woman", "Do You Really Want to Hurt Me", "Ladies Night"],
     answer: "Do You Really want to Hurt Me",
+    //gif: https://giphy.com/gifs/XzKvhlMTolr4A/html5
   },
 
   {
     question: "In 'Hitch', what is Alex Hitchens profession?",
-    choices: ["Lawyer", "Chef", "Date Doctor", "Engineer"],
+    choices: ["Lawyer", "Chef", "Date Doctor", "Accountant"],
     answer: "Date Doctor",
+    //gif: https://giphy.com/gifs/ieuOedYyNgz6M/html5
   },
 
   {
     question: "What is the highest grossing RomCom to date?",
-    choices: ["There's Something About Mary", "Pretty Woman", "Hitch", "My Big Fat Greek Wedding"],
+    choices: ["There's Something About Mary", "My Big Fat Greek Wedding", "Hitch", "Pretty Woman"],
     answer: "My Big Fat Greek Wedding",
+    //gif: https://giphy.com/gifs/3oz8xRnhiL4kfVEvgQ/html5
   },
 ]
   
     
     askQuestion();
+
+
 
     
 
