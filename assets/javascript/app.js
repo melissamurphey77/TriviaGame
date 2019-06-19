@@ -1,4 +1,12 @@
+$("#startbtn").on('click', function(){
+  $("#startbtn").remove();
+  $("#introPage").remove();
+})
+
+
+
 $(document).ready(function() {
+
   
   //var correct= 0;
 
@@ -9,20 +17,33 @@ $(document).ready(function() {
    //$("#quizstart").hide
  
 
- // $("#startbtn")on.click(function(){
- // $("#quizstart").show();
-//});
+
   
   var game = {
     questions: questions,
     currentQuestion: 0,
-    counter: 30,
+    counter: 15,
     correct: 0,
     incorrect: 0,
+    unanswered: 0,
     countdown: function(){
+      game.counter--;
+      $('#counter').html(game.counter);
+      if (game.counter<=0){
+        console.log("TIMES UP!");
+        game.timesUp();
+      }
 
     },
     askQuestion: function(){
+      timer=setInterval(fame.countdown, 1000);
+      $("#question").text(questions[currentQuestion].question);
+
+      $("#choice1").text(questions[currentQuestion].choices[0]);
+      $("#choice2").text(questions[currentQuestion].choices[1]);
+      $("#choice3").text(questions[currentQuestion].choices[2]);
+      $("#choice4").text(questions[currentQuestion].choices[3]);
+
 
     },
     timesUp: function(){
@@ -30,17 +51,34 @@ $(document).ready(function() {
     },
     results: function(){
 
+      
+      // Pretty Woman good quiz giphy
+      // https://media.giphy.com/media/rBS2GkR5XKUpO/giphy.gif
+
     },
     clicked: function(){
 
     },
     answerCorrect: function(){
 
+      // // Sally correct answer giphy
+      // https://media.giphy.com/media/6K5SCeSjNXJgk/giphy-downsized.gif
+
     },
     answerIncorrect: function(){
 
+
+      // Pretty Woman incorrect giphy
+      // https://media.giphy.com/media/26ybvVb9iSmht7LdC/giphy-downsized.gif
+
     },
-    
+    reset: function(){
+      
+      // the end giphy
+      // https://media.giphy.com/media/l4FAPaGGeB7D1LfIA/giphy.gif
+    },
+
+
 
 
 
@@ -77,7 +115,7 @@ $(document).ready(function() {
         }
   
   
-      },20000);
+      },15000);
 
 
 
