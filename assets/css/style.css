@@ -3,6 +3,8 @@ body{
 
 }
 
+
+
 .jumbotron {
     text-align: center;
     width: 764px;
@@ -10,6 +12,34 @@ body{
     margin-left: auto;
     margin-right: auto;
     margin-top: 20px;
+
+}
+
+#landingHeader {
+    text-align: center;
+    font-size: 50px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    margin-left: auto;
+    margin-right: auto;
+    
+
+
+}
+#landingFooter {
+    text-align: center;
+    font-size: 30px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    margin-left: auto;
+    margin-right: auto;
+   
+    
+
+}
+#click {
+    text-align: center;
+    font-size: 30px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    margin-left: auto;
 
 }
 .intropage {
@@ -52,9 +82,9 @@ div.header{
     background-color: hotpink;
     font-size: 24px;
     cursor: pointer;
-    width: 100px;
+    width: 500px;
     margin-top: 10px;
-    margin-bottom: 10px;
+    margin-bottom: 30px;
 }
 #startbtn:hover{
     background-color: cyan;

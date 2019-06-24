@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" type="text/css" href="assets/css/style.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
     <title>Rom-Com Trivia</title>
 </head>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js">
@@ -31,23 +32,19 @@ function changeVisibility() {
     <div class="jumbotron">
     
     
-    <div class="header">
-        <img src="assets/images/romcom_600x.png" id="title" alt="Rom-Com Trivia">
-    </div>
-    
-    
-
-    
 
     <div id="quizstart">
-            <div class="introGiphy">
+            <div class="introGiphy" style= visibility:visible>
                 <div id="giphyRomCom">
-                    <!-- append giphy images here -->
 
+                    <p id="landingHeader" class="animated fadeInDown delay-1s">Love Romantic Comedies?</p>
+                    <p id="landingFooter" class="animated fadeInUp delay-2s">Take this Quiz to Prove your a Sucker for Love!</p>
+                    <p id="click" class="animated jackInTheBox delay-3s">Click Below!</p>
+                    <!-- append giphy images here -->
+                    <iframe src="https://giphy.com/embed/WRDsQvN6J3Hri" width="456" height="480" frameBorder="0" class="giphy-embed" id="renee"></iframe><p><a href="https://giphy.com/gifs/tom-cruise-renee-zellweger-cameron-crowe-WRDsQvN6J3Hri">via GIPHY</a></p>
+                    <button id="startbtn">LET'S GET THIS PARTY STARTED!</button>
                 </div>
-                
-            
-            <button id="startbtn" onclick="changeVisibility()">START</button>
+                    
             <!-- hide giphyRomCom upon onclick start and show quiz -->
     </div>
         
@@ -56,7 +53,12 @@ function changeVisibility() {
     </section> -->
     <br>
 
-    <div class="questionAns">
+    <div class="questionAns" style= visibility:hidden>
+            <div class="header">
+                    <img src="assets/images/romcom_600x.png" id="title" alt="Rom-Com Trivia">
+            </div>
+        <br>
+
         <h2>Question:</h2>
         <br>
 

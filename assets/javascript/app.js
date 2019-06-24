@@ -1,11 +1,14 @@
 $("#startbtn").on('click', function(){
   $("#startbtn").remove();
  
+ 
 })
 
 
 
 $(document).ready(function() {
+
+
 
   
   //var correct= 0;
