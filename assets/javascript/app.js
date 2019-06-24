@@ -1,6 +1,6 @@
 $("#startbtn").on('click', function(){
   $("#startbtn").remove();
-  $("#introPage").remove();
+ 
 })
 
 
